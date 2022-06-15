@@ -1,17 +1,21 @@
-import Head from "next/head";
-import Link from "next/link";
+import LayoutThree from "../components/Layout/LayoutThree";
+import SliderTwo from "../components/Sections/Slider/SliderTwo";
+import sliderData from "../data/slider/sliderThree.json";
+import IntroductionThree from "../components/Sections/Introduction/IntroductionThree";
+import ProductTabSlideOne from "../components/Sections/ProductThumb/ProductTabSlide/ProductTabSlideOne";
+import productData from "../data/products.json";
+import IntroductionFour from "../components/Sections/Introduction/IntroductionFour";
+import IntroductionFive from "../components/Sections/Introduction/IntroductionFive";
 
-export default function Home() {
+export default function homepage3() {
   return (
-    <>
-      <Head>
-        <title>Index page</title>
-      </Head>
-      <div className="container">
-        <Link href="/homepages/homepage1">
-          <a>Go to homepage 1</a>
-        </Link>
-      </div>
-    </>
+    <LayoutThree title="Homepage 3">
+      <SliderTwo className="-style-3" data={sliderData} showArrows />
+      <ProductTabSlideOne data={productData} />
+
+      <IntroductionThree />
+      <IntroductionFour />
+      <IntroductionFive />
+    </LayoutThree>
   );
 }
