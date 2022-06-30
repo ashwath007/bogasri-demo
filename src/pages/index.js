@@ -9,7 +9,7 @@ import IntroductionFive from "../components/Sections/Introduction/IntroductionFi
 
 export default function homepage3() {
   return (
-    <LayoutThree title="Homepage 3">
+    <LayoutThree title="Bogasri">
       <SliderTwo className="-style-3" data={sliderData} showArrows />
       <ProductTabSlideOne data={productData} />
 

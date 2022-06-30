@@ -54,7 +54,9 @@ export default function ProductTabSlideOne({ data }) {
   let filteredProduct = getProducts(data, currentCategory, null, 8);
 
   return (
-    <div className="product-tab-slide">
+    <div className="product-tab-slide" style={{
+      backgroundColor:'#ABBC5A'
+    }}>
       <div className="container">
         <div className="product-tab-slide__header">
           <h5>New arrivals</h5>
